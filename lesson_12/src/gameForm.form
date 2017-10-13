@@ -2,10 +2,55 @@
 <form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="gameForm">
   <grid id="27dc6" binding="gamepanel" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="1">
     <constraints>
-      <xy x="20" y="20" width="500" height="134"/>
+      <xy x="35" y="20" width="485" height="422"/>
     </constraints>
     <properties/>
     <border type="none"/>
-    <children/>
+    <children>
+      <grid id="ae9c0" binding="panelqwest" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="1">
+        <constraints/>
+        <properties>
+          <preferredSize width="470" height="290"/>
+        </properties>
+        <border type="none"/>
+        <children/>
+      </grid>
+      <component id="1706c" class="javax.swing.JLabel" binding="answerenter">
+        <constraints/>
+        <properties>
+          <text value="Enter your answer"/>
+        </properties>
+      </component>
+      <component id="cb7e0" class="javax.swing.JTextField" binding="textanswer">
+        <constraints/>
+        <properties>
+          <preferredSize width="150" height="24"/>
+        </properties>
+      </component>
+      <component id="4bc58" class="javax.swing.JButton" binding="enterButton" default-binding="true">
+        <constraints/>
+        <properties>
+          <text value="Enter"/>
+        </properties>
+      </component>
+      <component id="97779" class="javax.swing.JButton" binding="helpMePlsButton" default-binding="true">
+        <constraints/>
+        <properties>
+          <text value="help me pls"/>
+        </properties>
+      </component>
+      <component id="a10ca" class="javax.swing.JLabel" binding="yourlives">
+        <constraints/>
+        <properties>
+          <text value="Label"/>
+        </properties>
+      </component>
+      <component id="63653" class="javax.swing.JButton" binding="giveUpButton" default-binding="true">
+        <constraints/>
+        <properties>
+          <text value="give up"/>
+        </properties>
+      </component>
+    </children>
   </grid>
 </form>

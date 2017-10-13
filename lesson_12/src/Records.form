@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="Records">
+  <grid id="27dc6" binding="panelRecord" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="1">
+    <constraints>
+      <xy x="20" y="20" width="500" height="400"/>
+    </constraints>
+    <properties/>
+    <border type="none"/>
+    <children>
+      <component id="cac5" class="javax.swing.JTextField" binding="textRecord">
+        <constraints/>
+        <properties>
+          <editable value="false"/>
+          <preferredSize width="300" height="300"/>
+        </properties>
+      </component>
+    </children>
+  </grid>
+</form>

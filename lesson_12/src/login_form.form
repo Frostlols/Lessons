@@ -28,13 +28,12 @@
         <properties>
           <editable value="true"/>
           <enabled value="true"/>
-          <focusAccelerator value=" "/>
           <foreground color="-16777216"/>
           <horizontalAlignment value="0"/>
           <inheritsPopupMenu value="false"/>
           <minimumSize width="20" height="24"/>
           <preferredSize width="100" height="24"/>
-          <text value=""/>
+          <text value="flip"/>
         </properties>
       </component>
       <component id="9509b" class="javax.swing.JLabel">
@@ -48,7 +47,7 @@
         <properties>
           <minimumSize width="25" height="25"/>
           <preferredSize width="100" height="25"/>
-          <text value=""/>
+          <text value="1234"/>
         </properties>
       </component>
       <component id="9b036" class="javax.swing.JButton" binding="pressForEnterButton" default-binding="true">

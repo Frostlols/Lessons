@@ -9,7 +9,7 @@ public class players_rep {
 
     public void login (String login,String password) throws Exception {
         Connection conn=JdbcConnection.getConnection();
-        PreparedStatement ps=conn.prepareStatement("SELECT ID players FROM players WHERE Login=? and Pass_hash=?");//создание
+        PreparedStatement ps=conn.prepareStatement("SELECT ID FROM players WHERE Login=? and Pass_hash=?");//создание
         ps.setString(1,login);
         ps.setString(2,password);
         ResultSet result=ps.executeQuery();

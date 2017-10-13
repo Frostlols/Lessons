@@ -52,7 +52,12 @@ public class register_form extends JFrame{//обязателньо пронас�
                         JOptionPane.showMessageDialog(null,"Registration error ","Error",JOptionPane.ERROR_MESSAGE);
                         e1.printStackTrace();
                     }
-                    gameForm gf=new gameForm();
+                    gameForm gf= null;
+                    try {
+                        gf = new gameForm();
+                    } catch (SQLException e1) {
+                        e1.printStackTrace();
+                    }
                     gf.setVisible(true);
                     setVisible(false);
 
