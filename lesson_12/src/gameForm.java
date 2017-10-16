@@ -29,12 +29,29 @@ public class gameForm extends JFrame{
             public void actionPerformed(ActionEvent e) {//логика проверки правильности не прпвильности
                 String answer=textanswer.getText();//получение ответа в строчной форме
                 String correctAnswer=currentQuestion.answer;// правильный овтет, то с чем сравнить
-                textanswer.setText("");
+                textanswer.setText("");//для удаления введённого слова при новом вопросе
                 if(answer.equals(correctAnswer)){//сравнение
                     JOptionPane.showMessageDialog(null,"You are right!!!","GJ",JOptionPane.INFORMATION_MESSAGE);//вывод какого то диалогового окна
                     score+=livesCount+2*helpCount;//начисление очков
-                    //TODO проверить последний ли это вопрос
-                    showNextqwest();
+                    if(questionNumber==questions.size()){
+                        records_rep rr=new records_rep();
+                        try {
+                            rr.addRecord(players_rep.player_id,score);
+                        } catch (SQLException e1) {
+                            e1.printStackTrace();
+                        }
+                        setVisible(false);
+                        Records r= null;
+                        try {
+                            r = new Records();
+                        } catch (SQLException e1) {
+                            e1.printStackTrace();
+                        }
+                        r.setVisible(true);
+                    }else{
+                        showNextqwest();
+                    }
+
                 }else {
                     livesCount--;
                     updateliveButenTxet();
@@ -44,7 +61,22 @@ public class gameForm extends JFrame{
                     }else {
                         updateHelpButtonText();
                     }
-                    //TODO проверить последний ли это вопрос
+                    if(questionNumber==questions.size()){
+                        records_rep rr=new records_rep();
+                        try {
+                            rr.addRecord(players_rep.player_id,score);
+                        } catch (SQLException e1) {
+                            e1.printStackTrace();
+                        }
+                        setVisible(false);
+                        Records r= null;
+                        try {
+                            r = new Records();
+                        } catch (SQLException e1) {
+                            e1.printStackTrace();
+                        }
+                        r.setVisible(true);
+                    }
                 }
 
             }
@@ -68,8 +100,24 @@ public class gameForm extends JFrame{
             @Override
             public void actionPerformed(ActionEvent e) {
                 JOptionPane.showMessageDialog(null,"Right answer:"+currentQuestion.answer,"BJ",JOptionPane.INFORMATION_MESSAGE);
-                //TODO
-                showNextqwest();
+                if(questionNumber==questions.size()){
+                    records_rep rr=new records_rep();
+                    try {
+                        rr.addRecord(players_rep.player_id,score);
+                    } catch (SQLException e1) {
+                        e1.printStackTrace();
+                    }
+                    setVisible(false);
+                    Records r= null;
+                    try {
+                        r = new Records();
+                    } catch (SQLException e1) {
+                        e1.printStackTrace();
+                    }
+                    r.setVisible(true);
+                }else{
+                    showNextqwest();
+                }
             }
         });
 

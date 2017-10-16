@@ -1,0 +1,10 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="lesson_12:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/lesson_12_jar</output-path>
+    <root id="archive" name="lesson_12.jar">
+      <element id="module-output" name="lesson_12" />
+      <element id="extracted-dir" path="$APPLICATION_HOME_DIR$/lib/jgoodies-forms.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="C:/Program Files/JetBrains/mysql-connector-java-5.1.44-bin.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>

@@ -7,7 +7,7 @@
     <properties/>
     <border type="none"/>
     <children>
-      <component id="cac5" class="javax.swing.JTextField" binding="textRecord">
+      <component id="f6349" class="javax.swing.JTextArea" binding="textRecord">
         <constraints/>
         <properties>
           <editable value="false"/>

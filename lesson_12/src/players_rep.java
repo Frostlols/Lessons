@@ -5,7 +5,7 @@ import java.sql.SQLException;
 
 public class players_rep {
 
-    private static int player_id;//возвращаем id
+    public static int player_id;//возвращаем id
 
     public void login (String login,String password) throws Exception {
         Connection conn=JdbcConnection.getConnection();
